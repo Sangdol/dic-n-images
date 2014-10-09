@@ -7,7 +7,7 @@ $ ->
     query = $input.val()
     return if query is ''
 
-    dicUrlPrefix = 'http://endic.naver.com/search.nhn?sLn=en&searchOption=all&query='
+    dicUrlPrefix = 'http://dic.daum.net/search.do?dic=eng&q='
     imagesUrlPrefix = 'http://images.search.yahoo.com/search/images?p='
     $dicIframe.prop 'src', dicUrlPrefix + query
     $imagesIframe.prop 'src', imagesUrlPrefix + query
