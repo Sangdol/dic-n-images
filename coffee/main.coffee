@@ -1,6 +1,6 @@
 $ ->
   DIC_URL_PREFIX = 'http://alldic.daum.net/search.do?dic=eng&q='
-  IMAGES_URL_PREFIX = 'http://images.search.yahoo.com/search/images?p='
+  IMAGES_URL_PREFIX = 'https://duckduckgo.com/?%3Fiax=1&iax=1&ia=images&q='
   $input = $('input')
   $button = $('button')
   $dicIframe = $('iframe.dic')
