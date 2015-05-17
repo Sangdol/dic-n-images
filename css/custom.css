@@ -1,12 +1,13 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 .search-wrap {
   box-sizing: border-box;
   height: 45px;
   padding: 10px;
   border-bottom: 1px solid gray;
-}
-
-html, body {
-  height: 100%;
 }
 
 .container {
