@@ -7,7 +7,24 @@ html, body {
   box-sizing: border-box;
   height: 45px;
   padding: 10px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #ccc;
+}
+
+ul.links {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.links li {
+  display: inline;
+  margin-left: 5px;
+}
+
+ul.links a {
+  text-decoration: none;
+  color: #333;
 }
 
 .container {
