@@ -5,6 +5,9 @@ $ ->
   $button = $('button')
   $dicIframe = $('iframe.dic')
   $imagesIframe = $('iframe.images')
+  $toggle = $('.toggle')
+  $iframes = $('iframe')
+
   search = ->
     query = $input.val()
     return if query is ''
@@ -28,6 +31,12 @@ $ ->
       search() if e.which is 13
 
     $button.click search
+
+    $toggle.on 'click tap', ->
+      $iframes.toggle()
+      return false
+
+    return
 
   do init = ->
     $input.focus()
