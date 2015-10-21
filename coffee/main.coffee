@@ -17,16 +17,6 @@ $ ->
     return
 
   do bindEvents = ->
-    $(document).on 'keydown', (e) ->
-      NUM_1_KEY = 49
-      NUM_2_KEY = 50
-
-      if e.ctrlKey and (e.which is NUM_1_KEY)
-        $dicIframe.contentWindow.focus()
-
-      if e.ctrlKey and (e.which is NUM_2_KEY)
-        $imagesIframe.contentWindow.focus()
-
     $input.on 'keydown', (e) ->
       search() if e.which is 13
 
