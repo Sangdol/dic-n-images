@@ -24,6 +24,7 @@ $ ->
     $search.click search
     $x.click ->
       $input.val ''
+      $input.focus()
 
     $toggle.on 'click tap', ->
       $iframes.toggle()
