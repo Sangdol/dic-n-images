@@ -2,7 +2,8 @@ $ ->
   DIC_URL_PREFIX = 'http://alldic.daum.net/search.do?dic=eng&q='
   IMAGES_URL_PREFIX = 'https://duckduckgo.com/?%3Fiax=1&iax=1&ia=images&q='
   $input = $('input')
-  $button = $('button')
+  $search= $('#search')
+  $x = $('#x')
   $dicIframe = $('iframe.dic')
   $imagesIframe = $('iframe.images')
   $toggle = $('.toggle')
@@ -20,7 +21,9 @@ $ ->
     $input.on 'keydown', (e) ->
       search() if e.which is 13
 
-    $button.click search
+    $search.click search
+    $x.click ->
+      $input.val ''
 
     $toggle.on 'click tap', ->
       $iframes.toggle()
